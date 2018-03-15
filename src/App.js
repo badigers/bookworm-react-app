@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import {Route} from "react-router-dom";
+import HomePage from "./components/HomePage";
+import LoginPage from "./components/LoginPage";
 
+const App = () =>
 
-const App = () => <div>Hello World</div>
+<div>
+  <Route path="/" exact component={HomePage} />
+  <Route path="/login" exact component={LoginPage} />
+</div>
 
 export default App;
